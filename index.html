@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="lado-esquerdo">
+            <h1>SNAKE GAME </h1> 
+            <div class="canvas">
+            <canvas id="snake" width="512" height="512">
+                Seu navegador não suporta html canvas
+            </canvas>
+        </div>
+        </div>  
+        <div class="lado-direito">
+            
+            <div class="cores">                
+                <ul>                    
+                    <li>cor do cenário: 
+                    <button class="amarelo"><b>Amarelo</b></button>
+                    <button class= "verde" ><b> Verde </b></button>
+                    <button class="laranja"><b>Laranja</b></button>
+                    </li>
+                    
+                    <li>cor da cobrinha:
+                    <button class="amarelo"><b>Amarelo</b></button>
+                    <button class=" verde "><b> Verde </b></button>
+                    <button class="laranja"><b>Laranja</b></button> 
+                    </li>                     
+                   
+                    <li>cor da comida:
+                    <button class="amarelo"><b>Amarelo</b></button>
+                    <button class=" verde "><b> verde </b></button>
+                    <button class="laranja"><b>Laranja</b></button>   
+                    </li> 
+                </ul>              
+                </div>
+            
+            <div class="botoes">
+                <button onclick="start()">
+                    START
+                </button>
+                <button onclick="clearInterval(jogo)">
+                    PAUSAR
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
+    <script src="js/cor.js"></script>
+</body>
+</html>
